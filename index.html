@@ -8,6 +8,62 @@
 :root{--navy:#123a63;--green:#1f9d77;--mint:#eaf8f3;--yellow:#fff8e6;--line:#dce4eb;--text:#263440;--muted:#6c7a87;--bg:#f4f7fa}
 *{box-sizing:border-box}body{margin:0;font-family:"Malgun Gothic","Apple SD Gothic Neo",sans-serif;background:var(--bg);color:var(--text);line-height:1.65}.hero{background:linear-gradient(135deg,#123a63,#205f8d 62%,#1f9d77);color:#fff;padding:48px 24px}.wrap,.container{max-width:1080px;margin:auto}.hero h1{font-size:32px;line-height:1.35;margin:8px 0 10px}.hero p{margin:0;opacity:.93}.meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.meta span{font-size:13px;padding:6px 10px;border:1px solid rgba(255,255,255,.25);border-radius:999px;background:rgba(255,255,255,.12)}.nav{position:sticky;top:0;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);z-index:5}.nav div{max-width:1080px;margin:auto;padding:0 18px;display:flex;overflow:auto}.nav a{padding:13px 10px;color:#536270;text-decoration:none;white-space:nowrap;font-size:14px}.container{padding:28px 18px 60px}section{background:#fff;border:1px solid var(--line);border-radius:16px;padding:25px;margin-top:18px;box-shadow:0 8px 22px rgba(20,45,70,.05)}h2{margin:0 0 14px;color:var(--navy);font-size:22px}h3{color:var(--navy);font-size:17px;margin:20px 0 10px}.summary{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:17px}.card b{display:block;color:var(--navy);margin-bottom:4px}.card span{font-size:13px;color:var(--muted)}table{width:100%;border-collapse:collapse;font-size:13px}th,td{border:1px solid var(--line);padding:9px;vertical-align:top}th{background:#eef3f7;color:var(--navy);text-align:left}.table-wrap{overflow:auto}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.box{border:1px solid var(--line);border-radius:14px;padding:16px}.box h4{margin:0 0 8px;color:var(--navy)}ul{padding-left:20px}li{margin:5px 0;font-size:14px}.note{background:var(--yellow);border-left:4px solid #e1a82d;border-radius:8px;padding:12px 14px;font-size:13px;color:#6a5518;margin-top:12px}.budget{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:14px}.budget div{background:var(--mint);border:1px solid #cfe8dc;border-radius:12px;padding:15px}.budget b{display:block;color:#17634e;font-size:13px}.budget strong{font-size:18px}.request{background:#fff6f6;border:1px solid #efd0d0;border-radius:12px;padding:15px}.examples{margin:0;padding-left:22px}.examples li{margin:3px 0}.opinion{background:#eef5fb;border-left:4px solid #2b6cb0;border-radius:8px;padding:12px 14px}@media(max-width:900px){.summary,.budget,.grid2{grid-template-columns:1fr 1fr}}@media(max-width:580px){.summary,.budget,.grid2{grid-template-columns:1fr}.hero h1{font-size:26px}}
 </style>
+
+<style id="font-normalization">
+/* 전체 폰트 크기 균형 조정 */
+body{font-size:14px;}
+
+/* 상단 */
+.hero h1{font-size:30px;}
+.hero p{font-size:14px;}
+.meta span{font-size:12.5px;}
+.nav a{font-size:13px;}
+
+/* 제목 */
+h2{font-size:20px;}
+h3{font-size:16px;}
+.box h4{font-size:15px;}
+
+/* 본문 */
+section{font-size:14px;}
+section ul,
+section ol{font-size:14px;}
+section li{font-size:14px;}
+
+/* 요약 카드 */
+.card b{font-size:14px;}
+.card span{font-size:12.5px;}
+
+/* 모든 표의 글자 크기 통일 */
+table{font-size:13px;}
+th,td{font-size:13px;line-height:1.55;}
+th{font-weight:700;}
+
+/* 콘텐츠 유형별 운영안의 예시(안) 번호 목록이 커지지 않도록 표 글자 크기에 맞춤 */
+table .examples{font-size:13px;}
+table .examples li{font-size:13px;line-height:1.5;margin:2px 0;}
+
+/* 예산 카드 */
+.budget b{font-size:12.5px;}
+.budget strong{font-size:16px;}
+.budget span{font-size:12px;}
+
+/* 안내/담당자 의견/검토 요청 */
+.note{font-size:12.5px;line-height:1.55;}
+.opinion{font-size:14px;line-height:1.6;}
+.request{font-size:14px;}
+.request li{font-size:14px;}
+
+/* 모바일에서도 지나치게 커지지 않도록 유지 */
+@media(max-width:580px){
+  body{font-size:13.5px;}
+  .hero h1{font-size:25px;}
+  h2{font-size:19px;}
+  h3{font-size:15.5px;}
+  table,th,td,table .examples,table .examples li{font-size:12.5px;}
+}
+</style>
+
 </head>
 <body>
 <header class="hero"><div class="wrap"><div style="font-size:14px;opacity:.82">마케팅기획실</div><h1>밈·트렌드 콘텐츠 및<br>공통 할인쿠폰 기획안</h1><p>운영 개요와 예산을 먼저 제시하고, 이후 콘텐츠 유형별·채널별 실행안을 구분하여 정리한 실행안입니다.</p><div class="meta"><span>보고일 2026-08-12</span><span>작성자 배정은</span><span>쿠폰 노출 2026-09-14 ~ 2026-10-13</span><span>쿠폰 사용 2026-09-14 ~ 2026-10-20</span></div></div></header>
