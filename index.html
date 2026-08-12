@@ -5,129 +5,33 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>밈·트렌드 콘텐츠 및 공통 할인쿠폰 기획안</title>
 <style>
-:root{--navy:#123a63;--green:#1f9d77;--sky:#eef5fb;--mint:#eaf8f3;--yellow:#fff8e6;--line:#dce4eb;--text:#263440;--muted:#6c7a87;--bg:#f4f7fa}
-*{box-sizing:border-box}body{margin:0;font-family:"Malgun Gothic","Apple SD Gothic Neo",sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
-.hero{background:linear-gradient(135deg,#123a63,#205f8d 62%,#1f9d77);color:#fff;padding:48px 24px}.wrap,.container{max-width:1080px;margin:auto}
-.hero h1{font-size:32px;line-height:1.35;margin:8px 0 10px}.hero p{margin:0;opacity:.93}.meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.meta span{font-size:13px;padding:6px 10px;border:1px solid rgba(255,255,255,.25);border-radius:999px;background:rgba(255,255,255,.12)}
-.nav{position:sticky;top:0;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);z-index:5}.nav div{max-width:1080px;margin:auto;padding:0 18px;display:flex;overflow:auto}.nav a{padding:13px 10px;color:#536270;text-decoration:none;white-space:nowrap;font-size:14px}
-.container{padding:28px 18px 60px}section{background:#fff;border:1px solid var(--line);border-radius:16px;padding:25px;margin-top:18px;box-shadow:0 8px 22px rgba(20,45,70,.05)}
-h2{margin:0 0 14px;color:var(--navy);font-size:22px}h3{color:var(--navy);font-size:17px;margin:20px 0 10px}
-.summary{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:17px}.card b{display:block;color:var(--navy);margin-bottom:4px}.card span{font-size:13px;color:var(--muted)}
-table{width:100%;border-collapse:collapse;font-size:13px}th,td{border:1px solid var(--line);padding:10px;vertical-align:top}th{background:#eef3f7;color:var(--navy);text-align:left}.table-wrap{overflow:auto}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.box{border:1px solid var(--line);border-radius:14px;padding:16px}.box h4{margin:0 0 8px;color:var(--navy)}
-ul{padding-left:20px}li{margin:5px 0;font-size:14px}.note{background:var(--yellow);border-left:4px solid #e1a82d;border-radius:8px;padding:12px 14px;font-size:13px;color:#6a5518;margin-top:12px}
-.budget{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:14px}.budget div{background:var(--mint);border:1px solid #cfe8dc;border-radius:12px;padding:15px}.budget b{display:block;color:#17634e}.budget strong{font-size:19px}.request{background:#fff6f6;border:1px solid #efd0d0;border-radius:12px;padding:15px}
-@media(max-width:850px){.summary,.budget,.grid2{grid-template-columns:1fr 1fr}}@media(max-width:580px){.summary,.budget,.grid2{grid-template-columns:1fr}.hero h1{font-size:26px}}
+:root{--navy:#123a63;--green:#1f9d77;--mint:#eaf8f3;--yellow:#fff8e6;--line:#dce4eb;--text:#263440;--muted:#6c7a87;--bg:#f4f7fa}
+*{box-sizing:border-box}body{margin:0;font-family:"Malgun Gothic","Apple SD Gothic Neo",sans-serif;background:var(--bg);color:var(--text);line-height:1.65}.hero{background:linear-gradient(135deg,#123a63,#205f8d 62%,#1f9d77);color:#fff;padding:48px 24px}.wrap,.container{max-width:1080px;margin:auto}.hero h1{font-size:32px;line-height:1.35;margin:8px 0 10px}.hero p{margin:0;opacity:.93}.meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.meta span{font-size:13px;padding:6px 10px;border:1px solid rgba(255,255,255,.25);border-radius:999px;background:rgba(255,255,255,.12)}.nav{position:sticky;top:0;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);z-index:5}.nav div{max-width:1080px;margin:auto;padding:0 18px;display:flex;overflow:auto}.nav a{padding:13px 10px;color:#536270;text-decoration:none;white-space:nowrap;font-size:14px}.container{padding:28px 18px 60px}section{background:#fff;border:1px solid var(--line);border-radius:16px;padding:25px;margin-top:18px;box-shadow:0 8px 22px rgba(20,45,70,.05)}h2{margin:0 0 14px;color:var(--navy);font-size:22px}h3{color:var(--navy);font-size:17px;margin:20px 0 10px}.summary{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:17px}.card b{display:block;color:var(--navy);margin-bottom:4px}.card span{font-size:13px;color:var(--muted)}table{width:100%;border-collapse:collapse;font-size:13px}th,td{border:1px solid var(--line);padding:9px;vertical-align:top}th{background:#eef3f7;color:var(--navy);text-align:left}.table-wrap{overflow:auto}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.box{border:1px solid var(--line);border-radius:14px;padding:16px}.box h4{margin:0 0 8px;color:var(--navy)}ul{padding-left:20px}li{margin:5px 0;font-size:14px}.note{background:var(--yellow);border-left:4px solid #e1a82d;border-radius:8px;padding:12px 14px;font-size:13px;color:#6a5518;margin-top:12px}.budget{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:14px}.budget div{background:var(--mint);border:1px solid #cfe8dc;border-radius:12px;padding:15px}.budget b{display:block;color:#17634e;font-size:13px}.budget strong{font-size:18px}.request{background:#fff6f6;border:1px solid #efd0d0;border-radius:12px;padding:15px}.examples{margin:0;padding-left:22px}.examples li{margin:3px 0}.opinion{background:#eef5fb;border-left:4px solid #2b6cb0;border-radius:8px;padding:12px 14px}@media(max-width:900px){.summary,.budget,.grid2{grid-template-columns:1fr 1fr}}@media(max-width:580px){.summary,.budget,.grid2{grid-template-columns:1fr}.hero h1{font-size:26px}}
 </style>
 </head>
 <body>
-<header class="hero"><div class="wrap">
-<div style="font-size:14px;opacity:.82">마케팅기획실</div>
-<h1>밈·트렌드 콘텐츠 및<br>공통 할인쿠폰 기획안</h1>
-<p>운영 개요와 예산을 먼저 제시하고, 이후 콘텐츠 유형별·채널별 실행안을 구분하여 정리한 실행안입니다.</p>
-<div class="meta"><span>보고일 2026-08-12</span><span>작성자 배정은</span><span>쿠폰 노출 2026-09-14 ~ 2026-10-13</span><span>쿠폰 사용 ~ 2026-10-20</span></div>
-</div></header>
-
-<nav class="nav"><div>
-<a href="#overview">운영 개요</a><a href="#budget">예산</a><a href="#content">콘텐츠 실행</a><a href="#channel">채널 실행</a><a href="#request">검토 요청</a>
-</div></nav>
-
+<header class="hero"><div class="wrap"><div style="font-size:14px;opacity:.82">마케팅기획실</div><h1>밈·트렌드 콘텐츠 및<br>공통 할인쿠폰 기획안</h1><p>운영 개요와 예산을 먼저 제시하고, 이후 콘텐츠 유형별·채널별 실행안을 구분하여 정리한 실행안입니다.</p><div class="meta"><span>보고일 2026-08-12</span><span>작성자 배정은</span><span>쿠폰 노출 2026-09-14 ~ 2026-10-13</span><span>쿠폰 사용 2026-09-14 ~ 2026-10-20</span></div></div></header>
+<nav class="nav"><div><a href="#overview">운영 개요</a><a href="#budget">예산</a><a href="#content">콘텐츠 실행</a><a href="#channel">채널 실행</a><a href="#request">검토 요청</a></div></nav>
 <main class="container">
-<div class="summary">
-<div class="card"><b>할인 조건</b><span>7만원 이상 거래 시 3,000원</span></div>
-<div class="card"><b>쿠폰 발행 수량</b><span>1,000개</span></div>
-<div class="card"><b>실사용확률</b><span>17.7%</span></div>
-<div class="card"><b>예상 실사용 건수</b><span>약 177건</span></div><div class="card"><b>예상 실사용금액</b><span>약 531,000원</span></div>
-</div>
+<div class="summary"><div class="card"><b>할인 조건</b><span>7만원 이상 거래 시 3,000원</span></div><div class="card"><b>쿠폰 발행 수량</b><span>1,000개</span></div><div class="card"><b>예상 실사용확률</b><span>17.7%</span></div><div class="card"><b>예상 실사용 건수</b><span>약 177건</span></div><div class="card"><b>예상 실사용금액</b><span>약 531,000원</span></div></div>
 
-<section><h2>1. 목적</h2>
-<ul>
-<li>밈·트렌드 콘텐츠를 활용한 콘텐츠 반응 및 아이템매니아 유입 확대</li>
-<li>SNS·블로그 등 콘텐츠 접점에 할인 혜택을 결합하여 실제 거래 참여 유도</li>
-<li>쿠폰 적용 거래실적을 통해 프로모션 효과 확인</li>
-</ul></section>
+<section><h2>1. 목적</h2><ul><li>게임 이용자의 관심도가 높은 밈·트렌드 콘텐츠를 활용하여 콘텐츠 반응 및 아이템매니아 유입 확대</li><li>SNS·블로그 등 콘텐츠 접점에 할인 혜택을 결합하여 실제 거래 참여 유도</li><li>쿠폰 적용 거래실적을 통해 프로모션 효과 확인</li></ul></section>
 
-<section id="overview"><h2>2. 내용</h2><h3>1) 운영 개요</h3>
-<div class="table-wrap"><table>
-<tr><th>항목</th><th>실행안</th></tr>
-<tr><td>운영 브랜드</td><td>아이템매니아</td></tr>
-<tr><td>운영 대상</td><td>아이템매니아 회원 전체</td></tr>
-<tr><td>콘텐츠 대상 게임</td><td>신작·신규 서버·대규모 업데이트 등 관심도 높은 게임 / 운영 기간 내 이슈 게임 수시 선정</td></tr>
-<tr><td>쿠폰 적용 게임</td><td>아이템매니아 내 전 게임</td></tr>
-<tr><td>운영 채널</td><td>유튜브 쇼츠, 인스타그램 릴스, X·스레드·페이스북, 블로그, 게임 커뮤니티</td></tr>
-<tr><td>쿠폰 조건</td><td>70,000원 이상 거래 시 3,000원 할인</td></tr>
-<tr><td>공용 쿠폰번호</td><td>1종</td></tr>
-<tr><td>쿠폰 발행 수량</td><td>1,000개</td></tr>
-<tr><td>쿠폰 사용 기준</td><td>ID당 1회 / 동일 거래 건 타 할인쿠폰 중복 적용 불가</td></tr>
-<tr><td>쿠폰 노출·운영 기간</td><td>2026-09-14 ~ 2026-10-13</td></tr><tr><td>쿠폰 사용 기간</td><td>2026-09-14 ~ 2026-10-20 (마지막 노출일 이후 7일 유예)</td></tr>
-</table></div>
-</section>
+<section id="overview"><h2>2. 내용</h2><h3>1) 운영 개요</h3><div class="table-wrap"><table><tr><th>항목</th><th>실행안</th></tr><tr><td>운영 브랜드</td><td>아이템매니아</td></tr><tr><td>운영 대상</td><td>아이템매니아 회원 전체</td></tr><tr><td>콘텐츠 대상 게임</td><td>신작·신규 서버·대규모 업데이트 등 관심도 높은 게임 / 운영 기간 내 이슈 게임 수시 선정</td></tr><tr><td>쿠폰 적용 게임</td><td>아이템매니아 내 전 게임</td></tr><tr><td>운영 채널</td><td>유튜브 쇼츠, 인스타그램 릴스, X·스레드·페이스북, 블로그, 게임 커뮤니티</td></tr><tr><td>쿠폰 조건</td><td>70,000원 이상 거래 시 3,000원 할인</td></tr><tr><td>공용 쿠폰번호</td><td>1종</td></tr><tr><td>쿠폰 발행 수량</td><td>1,000개</td></tr><tr><td>쿠폰 사용 기준</td><td>ID당 1회 사용 가능 / 동일 거래 건에 타 할인쿠폰과 중복 적용 불가</td></tr><tr><td>쿠폰 노출·운영 기간</td><td>2026-09-14 ~ 2026-10-13</td></tr><tr><td>쿠폰 사용 기간</td><td>2026-09-14 ~ 2026-10-20 (마지막 노출일 이후 7일 유예)</td></tr></table></div></section>
 
-<section id="budget"><h3 style="margin-top:0">2) 예산</h3>
-<div class="budget">
-<div><b>단가</b><strong>3,000원</strong></div>
-<div><b>쿠폰 발행 수량</b><strong>1,000개</strong></div><div><b>최대 지급금액</b><strong>3,000,000원</strong><span>1,000개 발행 기준</span></div>
-<div><b>실사용확률</b><strong>17.7%</strong></div>
-<div><b>예상 실사용금액</b><strong>약 531,000원</strong></div>
-</div>
-<div class="note">※ 실사용확률 근거: 2026년 1월~7월 관리자 추출 3,000원 할인쿠폰 평균 사용률 17.7% 기준<br>
-예상 실사용 건수: 약 177건 (1,000개 × 17.7%)<br>※ 최대 지급금액: 쿠폰 1,000개가 모두 사용될 경우의 최대 할인비용 / 예상 실사용금액: 과거 평균 사용률 17.7%를 적용한 예상 할인비용</div>
-</section>
+<section id="budget"><h3 style="margin-top:0">2) 예산</h3><div class="budget"><div><b>단가</b><strong>3,000원</strong></div><div><b>쿠폰 발행 수량</b><strong>1,000개</strong></div><div><b>최대 지급금액</b><strong>3,000,000원</strong></div><div><b>예상 실사용확률</b><strong>17.7%</strong></div><div><b>예상 실사용 건수</b><strong>약 177건</strong></div><div><b>예상 실사용금액</b><strong>약 531,000원</strong></div></div><div class="note">※ 예상 실사용확률 근거: 2026년 1월~7월 관리자 추출 3,000원 할인쿠폰 평균 사용률 17.7% 기준</div></section>
 
-<section id="content"><h3 style="margin-top:0">3) 실행안</h3><h3>(1) 콘텐츠 유형별 실행안</h3>
-<div class="grid2">
-<div class="box"><h4>밈 콘텐츠</h4>
-<ul>
-<li><b>개념:</b> 유행 밈 포맷을 게임 상황에 재해석한 공감·재미형 콘텐츠</li>
-<li><b>선정:</b> SNS·커뮤니티 활용도가 높고 게임에 자연스럽게 적용 가능한 소재</li>
-<li><b>제작:</b> 쇼츠·릴스 10~30초 / 이미지+짧은 문구</li>
-<li><b>예시(안):</b> 강화 실패 후 “분명 조금만 쓰려고 했는데…” / 게임머니 부족→잔액 확인→현실부정 / “나만 이런 거 아니지?” POV형</li>
-</ul></div>
-<div class="box"><h4>트렌드 콘텐츠</h4>
-<ul>
-<li><b>개념:</b> 신작·신규 서버·업데이트 등 시의성 높은 게임 이슈를 빠르게 전달하는 정보형 콘텐츠</li>
-<li><b>선정:</b> 신규 직업·아이템, 대규모 업데이트, 게임머니·아이템 수요 변화 등</li>
-<li><b>제작:</b> 숏폼 핵심 요약 / SNS 핵심 정보 / 블로그 정보형 포스팅</li>
-<li><b>예시(안):</b> 신규 서버 오픈 핵심 변경점 / 대규모 업데이트 후 수요 증가 아이템 / 신규 직업·장비 업데이트 준비 체크</li>
-</ul></div>
-</div><div class="note">※ 밈 소재는 실제 게시 시점의 SNS·게임 커뮤니티 반응을 확인하여 최신 소재로 선정합니다.</div>
-</section>
+<section id="content"><h3 style="margin-top:0">3) 실행안</h3><h3>(1) 콘텐츠 유형별 운영안</h3><div class="table-wrap"><table><tr><th>구분</th><th>밈 콘텐츠</th><th>트렌드 콘텐츠</th></tr><tr><td>개념</td><td>유행 밈 포맷·표현을 게임 이용 상황에 맞게 재해석한 공감·재미형 콘텐츠</td><td>신작·신규 서버·업데이트 등 시의성 높은 게임 이슈를 빠르게 전달하는 정보형 콘텐츠</td></tr><tr><td>소재 선정 기준</td><td>SNS·커뮤니티 활용도가 높고 게임 상황에 자연스럽게 적용 가능한 소재 / 논란성 소재 제외</td><td>신작 출시, 신규 서버, 대규모 업데이트, 신규 직업·아이템, 게임머니·아이템 수요 변화 등</td></tr><tr><td>제작 형태</td><td>쇼츠·릴스 10~30초 / X·스레드·페이스북 이미지+짧은 문구</td><td>쇼츠·릴스 핵심 요약 / SNS 핵심 정보+이미지 / 블로그 업데이트·공략·정보형 포스팅</td></tr><tr><td>예시</td><td><ol class="examples"><li>강화 전 “이번 한 번만” → 연속 실패 후 재화 0원, ‘한 번만’ 공감 밈</li><li>“월급 들어온 날의 나 / 강화 끝난 뒤의 나” 잔액 Before &amp; After 비교 밈</li><li>“일퀘만 하고 끈다던 나 / 새벽 2시까지 보스 도는 나” 기대 vs 현실 밈</li></ol></td><td><ol class="examples"><li>신규 서버 오픈 핵심 변경점 + 초반 준비 아이템 정리</li><li>대규모 업데이트 후 수요 증가 예상 아이템·게임머니 포인트</li><li>신규 직업·장비 업데이트 핵심 요약 + 거래 준비 체크</li></ol></td></tr></table></div></section>
 
-<section id="channel"><h3 style="margin-top:0">(2) 채널별 운영 및 쿠폰 제공 방식</h3>
-<div class="table-wrap"><table>
-<tr><th>채널</th><th>운영 콘텐츠</th><th>쿠폰 제공 방식</th></tr>
-<tr><td>유튜브 쇼츠</td><td>밈·트렌드 숏폼</td><td>영상 말미 자막/설명란에 쿠폰번호·조건 안내</td></tr>
-<tr><td>인스타그램 릴스</td><td>밈·트렌드 릴스</td><td>영상 말미/본문/댓글에 쿠폰 안내</td></tr>
-<tr><td>X·스레드·페이스북</td><td>밈·트렌드 이미지/문구형 콘텐츠</td><td>게시글 본문/댓글에 쿠폰번호·조건 안내</td></tr>
-<tr><td>블로그</td><td>일반 게임 정보 + 트렌드 콘텐츠</td><td>포스팅 하단에 쿠폰번호·조건·기간 안내</td></tr>
-<tr><td>게임 커뮤니티</td><td>게임 이슈·정보형 포스팅</td><td>게시글 성격·운영정책을 고려해 쿠폰 안내</td></tr>
-</table></div>
-</section>
+<section id="channel"><h3 style="margin-top:0">(2) 채널별 운영 및 쿠폰 제공 방식</h3><div class="table-wrap"><table><tr><th>채널</th><th>운영 콘텐츠</th><th>쿠폰 제공 방식</th></tr><tr><td>유튜브 쇼츠</td><td>밈·트렌드 숏폼</td><td>영상 말미 자막/설명란에 쿠폰번호·조건 안내</td></tr><tr><td>인스타그램 릴스</td><td>밈·트렌드 릴스</td><td>영상 말미/본문/댓글에 쿠폰 안내</td></tr><tr><td>X·스레드·페이스북</td><td>밈·트렌드 이미지/문구형</td><td>게시글 본문/댓글에 쿠폰번호·조건 안내</td></tr><tr><td>블로그</td><td>일반 게임 정보 + 트렌드 콘텐츠</td><td>포스팅 하단에 쿠폰번호·조건·기간 안내</td></tr><tr><td>게임 커뮤니티</td><td>게임 이슈·정보형 포스팅</td><td>게시글 성격·운영정책을 고려해 쿠폰 안내</td></tr></table></div></section>
 
-<section><h3 style="margin-top:0">4) 성과지표</h3>
-<ul>
-<li>콘텐츠 조회수·도달수·참여율</li>
-<li>할인쿠폰 발행 수량 대비 실제 사용 건수·사용률</li>
-<li>쿠폰 적용 거래건수·거래금액</li>
-<li>쿠폰 할인비용 대비 거래수익</li>
-</ul></section>
+<section><h3 style="margin-top:0">4) 성과지표</h3><ul><li>콘텐츠 조회수·도달수·참여율</li><li>할인쿠폰 발행 수량 대비 실제 사용 건수·사용률</li><li>쿠폰 적용 거래건수·거래금액</li><li>쿠폰 할인비용 대비 거래수익</li></ul></section>
 
-<section><h2>3. 기대효과</h2>
-<ul>
-<li>게임 이용자 관심 및 아이템매니아 유입 확대</li>
-<li>채널 특성에 맞는 쿠폰 제공으로 콘텐츠 소비와 거래 혜택 연결</li>
+<section><h2>3. 기대효과</h2><ul><li>밈·트렌드 콘텐츠를 활용한 게임 이용자 관심 및 아이템매니아 유입 확대</li><li>채널 특성에 맞는 쿠폰 제공을 통해 콘텐츠 소비와 거래 혜택을 자연스럽게 연결</li></ul></section>
 
-</ul></section>
+<section><h2>4. 담당자 의견</h2><div class="opinion">콘텐츠별 성과를 비교하여 반응 및 쿠폰 사용 기여도가 높은 유형을 후속 콘텐츠 운영에 우선 반영하고자 합니다.</div></section>
 
-
-
-<section id="request"><h2>4. 검토 요청사항</h2><div class="request">
-<ul>
-<li>밈·트렌드 콘텐츠 유형 및 채널별 쿠폰 제공 방식으로 운영 진행 여부</li>
-<li>70,000원 이상 거래 시 3,000원 할인 / 공용 쿠폰번호 1종 / 쿠폰 발행 수량 1,000개 / ID당 1회 사용 조건 진행 여부</li>
-<li>쿠폰 노출·운영 기간 2026-09-14 ~ 2026-10-13 / 쿠폰 사용 기간 2026-09-14 ~ 2026-10-20 적용 여부</li><li>최대 지급금액 3,000,000원(예상 실사용금액 약 531,000원) 예산 반영 여부</li>
-</ul>
-</div></section>
+<section id="request"><h2>5. 검토 요청사항</h2><div class="request"><ul><li>밈·트렌드 콘텐츠 유형 및 채널별 쿠폰 제공 방식으로 운영 진행 여부</li><li>70,000원 이상 거래 시 3,000원 할인 / 공용 쿠폰번호 1종 / 쿠폰 발행 수량 1,000개 / ID당 1회 사용 조건 진행 여부</li><li>쿠폰 노출·운영 기간 2026-09-14 ~ 2026-10-13 / 쿠폰 사용 기간 2026-09-14 ~ 2026-10-20 적용 여부</li><li>최대 지급금액 3,000,000원(예상 실사용금액 약 531,000원) 예산 반영 여부</li></ul></div></section>
 </main>
 </body>
 </html>
